@@ -22,7 +22,10 @@ Bfcshop Wordpress Clock Calendar Widget gives you the ability to add a flash bas
 
 
 == Frequently Asked Questions ==
-...
+The plugin is not working correctly and is not showing up?
+
+Please download the ZIP file from this URL: http://www.spletne-kode.si/clock-with-calendar.rar Extract and upload the directory to your plugin directory,
+activate it trough 'plugins' and set the size and title in Widget section.
 
 == Screenshots ==
 ...
