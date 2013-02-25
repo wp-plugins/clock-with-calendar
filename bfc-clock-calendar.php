@@ -1,7 +1,7 @@
 <?php
 /*
 	Plugin Name: Bfcshop Wordpress Clock Calendar
-	Plugin URI: http://www.spletne-kode.si/bfcshop-wordpress-clock-calendar.rar
+	Plugin URI: http://www.spletne-kode.si/clock-with-calendar.rar
 	Description: Bfcshop Wordpress Clock Calendar for WordPress
 	Version: 1.0
 	Author: Saso Pogorelc
@@ -40,14 +40,14 @@ function bfc_clock_calendar_add_pages() {
 
 
 
-/*if (isset($_GET['page']) && $_GET['page'] == 'bfcshop-wordpress-clock-calendar/bfc-clock-calendar.php'){
+/*if (isset($_GET['page']) && $_GET['page'] == 'clock-with-calendar/bfc-clock-calendar.php'){
 	wp_enqueue_script('jquery');
-	wp_register_script('drag', plugins_url("bfcshop-wordpress-clock-calendar/jquery-ui-1.7.1.custom.min.js"), array('jquery','media-upload','thickbox'));
+	wp_register_script('drag', plugins_url("clock-with-calendar/jquery-ui-1.7.1.custom.min.js"), array('jquery','media-upload','thickbox'));
 	wp_enqueue_script('drag');		
-	wp_register_script('my-upload', plugins_url("bfcshop-wordpress-clock-calendar/script.js"), array('jquery','media-upload','thickbox'));
+	wp_register_script('my-upload', plugins_url("clock-with-calendar/script.js"), array('jquery','media-upload','thickbox'));
 	wp_enqueue_script('my-upload');
 	wp_enqueue_style('thickbox');
-	wp_register_style('myStyleSheets', plugins_url("bfcshop-wordpress-clock-calendar/style.css"));
+	wp_register_style('myStyleSheets', plugins_url("clock-with-calendar/style.css"));
     wp_enqueue_style( 'myStyleSheets');
 }
 */
@@ -58,7 +58,7 @@ function bfc_clock_calendar_xmlURLpath($file){
 	//path for xml file
 	$blogUrl  = explode('/', get_bloginfo('home'));
 	$urlServer = str_replace($blogUrl[3],"",$_SERVER['DOCUMENT_ROOT']);
-	$urlPlugin = str_replace("http://".$blogUrl[2],"", plugins_url('bfcshop-wordpress-clock-calendar/'));
+	$urlPlugin = str_replace("http://".$blogUrl[2],"", plugins_url('clock-with-calendar/'));
 	$url = $urlServer.$urlPlugin.$file;
 	return $url;
 
@@ -78,7 +78,7 @@ function widgetbfcclockcalendar($wNumber, $name, $customOption, $positionX , $po
 
 	if($customOption == '1')
 
-		$xmlpath  = plugins_url("bfcshop-wordpress-clock-calendar/xml_option_".$wNumber.".xml");
+		$xmlpath  = plugins_url("clock-with-calendar/xml_option_".$wNumber.".xml");
 
 		$positionXN = $positionX;
 
@@ -86,7 +86,7 @@ function widgetbfcclockcalendar($wNumber, $name, $customOption, $positionX , $po
 
 	if($customOption == '0'){
 
-		$xmlpath  = plugins_url("bfcshop-wordpress-clock-calendar/xml_option_".$wNumber.".xml");
+		$xmlpath  = plugins_url("clock-with-calendar/xml_option_".$wNumber.".xml");
 
 		$positionXN = $mainoptions['ContainerX'];
 
@@ -101,15 +101,15 @@ function widgetbfcclockcalendar($wNumber, $name, $customOption, $positionX , $po
 
 	$aut_url = 'http://www.bfcshop.com';	
 
-	$flashtag = '<div style = "position:relative; width:'.$widthIn.'px; height:'.$heightIn.'px; margin-left:'.$positionXN.'px; margin-top:'.$positionYN.'px; text-align:center;"><script type="text/javascript" src="'.plugins_url("bfcshop-wordpress-clock-calendar/swfobject/swfobject.js").'" charset="utf-8"></script><script type="text/javascript" src="'.plugins_url("bfcshop-wordpress-clock-calendar/swfobject/swfaddress.js").'" charset="utf-8"></script><script type="text/javascript">
+	$flashtag = '<div style = "position:relative; width:'.$widthIn.'px; height:'.$heightIn.'px; margin-left:'.$positionXN.'px; margin-top:'.$positionYN.'px; text-align:center;"><script type="text/javascript" src="'.plugins_url("clock-with-calendar/swfobject/swfobject.js").'" charset="utf-8"></script><script type="text/javascript" src="'.plugins_url("clock-with-calendar/swfobject/swfaddress.js").'" charset="utf-8"></script><script type="text/javascript">
 
 								var clockcalenarvars = {
 
 								xmlPath:          "'.$xmlpath.'",	
 
-								cssPath:          "'.plugins_url("bfcshop-wordpress-clock-calendar/css/style.css").'",
+								cssPath:          "'.plugins_url("clock-with-calendar/css/style.css").'",
 
-								fontPath:          "'.plugins_url("bfcshop-wordpress-clock-calendar/fonts/Font.swf").'"};			
+								fontPath:          "'.plugins_url("clock-with-calendar/fonts/Font.swf").'"};			
 
 								var params = {};
 
@@ -117,7 +117,7 @@ function widgetbfcclockcalendar($wNumber, $name, $customOption, $positionX , $po
 
 								params.wmode = "transparent";
 
-								swfobject.embedSWF("'.plugins_url("bfcshop-wordpress-clock-calendar/counter_v2_reflect_noMask.swf").'", "'.$name.'-'.$wNumber.'", "'.$widthIn.'px", "'.$heightIn.'px", "9.0.0", "'.plugins_url("bfcshop-wordpress-clock-calendar/swfobject/expressInstall.swf").'", clockcalenarvars, params, attributes);
+								swfobject.embedSWF("'.plugins_url("clock-with-calendar/counter_v2_reflect_noMask.swf").'", "'.$name.'-'.$wNumber.'", "'.$widthIn.'px", "'.$heightIn.'px", "9.0.0", "'.plugins_url("clock-with-calendar/swfobject/expressInstall.swf").'", clockcalenarvars, params, attributes);
 
 							</script>
 
@@ -215,7 +215,7 @@ function bfc_clock_calendar_createflashcode( $widget=false, $wNumber, $height, $
 
 function bfc_clock_calendar_short($atts){
 
-// use [bfcshop-wordpress-clock-calendar id=1 width=300 height=300] 
+// use [clock-with-calendar id=1 width=300 height=300] 
 
 //      id must be unique value
 
@@ -325,7 +325,7 @@ function bfc_clock_calendar_options() {
 
 	</div>
 
-	<input type="hidden" id="path" value="<?php echo plugins_url('bfcshop-wordpress-clock-calendar/')?>">
+	<input type="hidden" id="path" value="<?php echo plugins_url('clock-with-calendar/')?>">
 
 <?php
 
