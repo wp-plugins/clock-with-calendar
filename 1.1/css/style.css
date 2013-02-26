@@ -1,0 +1,18 @@
+
+/*style for text on text captions that appear in about page and contact*/
+.daysName {
+	
+	font-family: "Bebas";
+    font-size: 46;
+	color: #b7b4b4;
+	margin-left:2px;
+	text-align:center;
+}
+.betweenText
+{
+	font-family: "Bebas";
+    font-size: 46;
+	color: #b7b4b4;
+	margin-left:14px;
+	text-align:center;
+}
