@@ -4,7 +4,7 @@ Donate link:
 Tags: flash, clock, time, swf, calendar, widget, sidebar, calendar
 Requires at least: 2.3
 Tested up to: 3.5
-Stable tag: 1.0
+Stable tag: 1.1
 License: GPLv2
 
 == Description ==
@@ -34,4 +34,4 @@ activate it trough 'plugins' and set the size and title in Widget section.
 ...
 
 == Upgrade Notice ==
-...
+1.1 Version, fixed error with not showing up
