@@ -4,7 +4,7 @@ Donate link:
 Tags: flash, clock, time, swf, calendar, widget, sidebar, calendar
 Requires at least: 2.3
 Tested up to: 3.5
-Stable tag: 1.1
+Stable tag: 1.0
 License: GPLv2
 
 == Description ==
@@ -22,10 +22,7 @@ Bfcshop Wordpress Clock Calendar Widget gives you the ability to add a flash bas
 
 
 == Frequently Asked Questions ==
-The plugin is not working correctly and is not showing up?
-
-Please download the ZIP file from this URL: http://www.spletne-kode.si/clock-with-calendar.rar Extract and upload the directory to your plugin directory,
-activate it trough 'plugins' and set the size and title in Widget section.
+...
 
 == Screenshots ==
 ...
@@ -34,4 +31,4 @@ activate it trough 'plugins' and set the size and title in Widget section.
 ...
 
 == Upgrade Notice ==
-1.1 Version, fixed error with not showing up
+...

@@ -3,7 +3,7 @@
 	Plugin Name: Bfcshop Wordpress Clock Calendar
 	Plugin URI: http://www.spletne-kode.si/clock-with-calendar.rar
 	Description: Bfcshop Wordpress Clock Calendar for WordPress
-	Version: 1.1
+	Version: 1.0
 	Author: Saso Pogorelc
 	Author URI: 
 	Copyright 2012, bfcshop d.o.o.
