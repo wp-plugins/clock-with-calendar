@@ -4,7 +4,7 @@ Donate link:
 Tags: flash, clock, time, swf, calendar, widget, sidebar, calendar
 Requires at least: 2.3
 Tested up to: 3.5
-Stable tag: 1.1
+Stable tag: 1.2
 License: GPLv2
 
 == Description ==
