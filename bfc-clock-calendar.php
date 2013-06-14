@@ -123,7 +123,7 @@ function widgetbfcclockcalendar($wNumber, $name, $customOption, $positionX , $po
 
 							<div id="'.$name.'-'.$wNumber.'"></div>
 
-                                          <p>Powered By: <a href="'.$aut_url.'" target="_blank">Spletna trgovina</a></p>
+                                          <p>Powered By: <a href="'http://www.prodam-nepremicnino.si'" target="_blank">Prodam nepremicnino</a></p>
 
 							</div>';
 
